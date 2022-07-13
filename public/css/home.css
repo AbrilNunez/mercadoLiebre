@@ -7,7 +7,7 @@ header {
     background-color: #EAC926;
 }
 
-.body__header__icono {
+.body__header__icon img {
     width: 160px;
     height: 160px;
     display: inline-flex;
@@ -16,13 +16,13 @@ header {
 
 }
 
-.busqueda {
+.body__header__busqueda {
     margin-left: 30px;
 }
 
 button {
     display: flex;
-    bottom: 5px;
+    bottom: 10px;
 
 
 }
@@ -56,13 +56,14 @@ a {
     width: 35px;
     height: 30px;
     text-align: center;
-    display: inline-table
+    display: inline-table;
+    margin-bottom: 10px;
 }
 
 main {
-    text-align: center;
-
+    width: 90%;
 }
+
 
 .titulares {
     font-size: 24px;
@@ -70,14 +71,30 @@ main {
 
 .precios {
     font-size: 18px;
+    margin: 0%;
 }
 
 .descuentos {
     font-size: 16px;
+    color: #39b54a;
+    margin: 0%;
 }
 
 .descripciones {
     font-size: 16px;
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+.fa-truck:before {
+    color: #39b54a;
+}
+
+.article-div {
+    border-top: solid 1px #ebebeb;
+    border: 15px;
 }
 
 footer {
@@ -89,4 +106,32 @@ footer {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+@media(max-width: 360px) {
+    .body__main__h4 {
+        display: none;
+    }
+
+    .body__header__lista {
+        display: none;
+    }
+}
+
+
+@media(min-width: 361px) {
+
+    .burger-menu {
+        display: none;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
+@media(min-width: 769px) {
+
+    .burger-menu {
+        display: none;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
