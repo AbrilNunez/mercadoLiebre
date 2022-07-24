@@ -174,7 +174,7 @@ main section article i {
     margin-bottom: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .body__header__lista {
         display: none;
     }
@@ -229,9 +229,27 @@ main section article i {
         display: inline-table;
         margin-left: 28%;
     }
+    .body__main__section-ult-vis {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    article {
+        width: 100%
+    }
+    
+    
+    .body__main__section-ofer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .body__main__section-ofer article {
+        width: 100%;
+    }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 481px) {
 
     .burger-menu {
         display: none;
@@ -293,15 +311,27 @@ main section article i {
     .body__header__lista a {
         padding: 0px 5px;
     }
+
+    
     .body__main__section-ult-vis {
-        width: 100%;
-        flex-wrap: wrap;
-        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     article {
-        width: 50%;
+        width: 45%;
+        margin: 5px;
+        background-color: white;
     }
-} 
+    .body__main__section-ofer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .body__main__section-ofer article {
+        width: 45%;
+    }
+}
 @media (min-width: 769px) {
     .body__main__section-ult-vis {
         display: flex;
@@ -319,34 +349,4 @@ main section article i {
         justify-content: space-around;
     }
 }
-@media (max-width: 768px) {
-    .body__main__section-ult-vis {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    article {
-        width: 45%;
-        margin: 5px;
-        background-color: white;
-    }
-    .body__main__section-ofer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-@media (max-width: 480px){
-    .body__main__section-ult-vis {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    
-    .body__main__section-ofer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
+
