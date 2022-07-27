@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/1164a0eba2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container__sup">
+            <div class="body__header__icon">
+                <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="icono"></a>
+                
+            </div>
+            <div class="body__header__busqueda">
+                <form action="">
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <button class="fa-solid fa-magnifying-glass"></button>
+                </form>
+            </div>
+        </div>
+        <p class="body__header__h2"><i id="nav__icon" class="fa-solid fa-hand-holding-dollar"></i><b> Comprá en cuotas y
+                sin tarjeta de crédito</b></p>
+        <nav class="body__header__lista">
+            <ul type="none">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul type="none">
+                <li><a href="/register">Crea tu cuenta</a><i id="nav__icon" class="fa-solid fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i id="nav__icon" class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li><a href="">Mis compras</a><i id="nav__icon" class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+            <img class="header__img__home-banner" width="100%" src="/images/img-home-banner.jpg" alt="img-home-banner">
+        </div>
+    </header>
+    <main>
+        <section class="login__section">
+            <div class="login__box">
+                <label for="username" class="login__label">Nombre de usuario</label>
+                <input type="text" id="username" name="usernname" class="login__input">
+            </div>
+            <div class="login__box">
+                <label for="password" class="login__label">Contraseña</label>
+                <input type="password" id="password" name="password" class="login__input">
+            </div>
+            <div class="login__box">
+                <a  class="login__button-enviar" href="/">Enviar</a>
+            </div>
+        </section>
+        <footer>
+            <section>
+                <i id="footer_icon" class="fa-solid fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p class="descripciones">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section>
+                <i id="footer_icon" class="fa-solid fa-gift"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p class="descripciones">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <i id="footer_icon" class="fa-solid fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p class="descripciones">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+    
+            </section>
+            <section>
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </section>
+        </footer>
+    </main>
+    </body>
