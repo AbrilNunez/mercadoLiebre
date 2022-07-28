@@ -113,19 +113,38 @@ article {
     border: 1px solid #ebebeb;
     width: 100%;
     background-color: white;
+    border-radius: 5px;
+    transition: all 1s;
 }
+article:hover {
+        box-shadow: 5px 5px 10px rgb(100, 100, 100);
 
-.fa-truck:before {
-    color: #39b54a;
+}
+article h4{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+article:hover h4{
+    height: 40px;
+    margin-top: 15px;
 }
 
 .article-div {
     border-top: solid 1px #ebebeb;
     border: 15px;
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 2%;
 }
+
 
 footer {
     text-align: center;
+    margin-top: 5%;
 
 }
 
@@ -144,12 +163,17 @@ main section article i {
     padding: 5px;
     width: 30px;
     height: 30px;
+    color: #39b54a;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 60%;
     position: relative;
     left: 85%;
     top: -22.5px;
+    transition: all 1s;
+}
+main section article i:hover {
+    transform: rotate(360deg);
 }
 
 .div_pyd {
@@ -172,6 +196,10 @@ main section article i {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: all 1s;
+}
+#footer_icon:hover {
+    color: #EAC926;
 }
 
 @media (min-width: 320px) {
@@ -201,7 +229,7 @@ main section article i {
         display: flex;
         width: 60%;
         position: relative;
-        right: 50px;
+        right: -20px;
         top: -10px;
     }
 
@@ -227,7 +255,6 @@ main section article i {
         height: 30px;
         text-align: center;
         display: inline-table;
-        margin-left: 28%;
     }
     .body__main__section-ult-vis {
         display: flex;
@@ -317,6 +344,7 @@ main section article i {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    
     }
     article {
         width: 45%;
@@ -328,15 +356,14 @@ main section article i {
         flex-direction: row;
         justify-content: space-around;
     }
-    .body__main__section-ofer article {
-        width: 45%;
-    }
+   
 }
 @media (min-width: 769px) {
     .body__main__section-ult-vis {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        height: 400px;
     }
     article {
         width: 22%;
@@ -347,6 +374,15 @@ main section article i {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        height: 400px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .body__div_end {
+        margin-left: 10px;
     }
 }
 
